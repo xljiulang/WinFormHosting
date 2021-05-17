@@ -1,11 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormHosting
+namespace Microsoft.Extensions.Hosting
 {
     /// <summary>
     /// WinForm后台任务和WinForm线程

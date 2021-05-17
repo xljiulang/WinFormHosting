@@ -1,7 +1,6 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 
-namespace WinFormHosting
+namespace System.Windows.Forms
 {
     /// <summary>
     /// WinForm调度器
@@ -11,6 +10,6 @@ namespace WinFormHosting
         /// <summary>
         /// 获取或设置同步上下文
         /// </summary>
-        public SynchronizationContext SynchronizationContext { get; set; }
+        public SynchronizationContext? SynchronizationContext { get; set; }
     }
 }

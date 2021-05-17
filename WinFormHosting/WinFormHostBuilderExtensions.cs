@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Windows.Forms;
 
-namespace WinFormHosting
+namespace Microsoft.Extensions.Hosting
 {
     /// <summary>
     /// IHostBuilder的WinForm扩展

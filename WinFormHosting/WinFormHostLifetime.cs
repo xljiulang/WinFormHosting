@@ -1,11 +1,10 @@
-﻿using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormHosting
+namespace Microsoft.Extensions.Hosting
 {
     /// <summary>
     /// WinForm生命周期
@@ -36,7 +35,7 @@ namespace WinFormHosting
             return Task.CompletedTask;
         }
 
-        private void OnApplicationExit(object sender, System.EventArgs e)
+        private void OnApplicationExit(object? sender, System.EventArgs e)
         {
             Application.ApplicationExit -= OnApplicationExit;
             this.applicationLifetime.StopApplication();

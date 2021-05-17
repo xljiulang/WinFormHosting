@@ -1,7 +1,6 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 
-namespace WinFormHosting
+namespace System.Windows.Forms
 {
     /// <summary>
     /// WinForm调度器
@@ -11,7 +10,7 @@ namespace WinFormHosting
         /// <summary>
         /// 获取或设置同步上下文
         /// </summary>
-        SynchronizationContext SynchronizationContext { get; set; }
+        SynchronizationContext? SynchronizationContext { get; set; }
 
         /// <summary>
         /// 尝试在同步上下文投递执行委托
@@ -26,7 +25,7 @@ namespace WinFormHosting
                 return false;
             }
 
-            context.Post(state => ((Action)state)(), action);
+            context.Post(state => ((Action)state!)(), action);
             return false;
         }
 
@@ -44,7 +43,7 @@ namespace WinFormHosting
 
             if (action != null)
             {
-                context.Post(state => ((Action)state)(), action);
+                context.Post(state => ((Action)state!)(), action);
             }
         }
     }

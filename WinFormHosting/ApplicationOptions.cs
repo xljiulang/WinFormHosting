@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace WinFormHosting
+﻿namespace System.Windows.Forms
 {
     /// <summary>
     /// 表示Application选项
