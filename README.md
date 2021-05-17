@@ -7,6 +7,7 @@ WinForm for Microsoft.Extensions.Hosting
 ```
 
 ### 如何使用
+```
 public static void Main(string[] args)
 {
 	CreateHostBuilder(args).Build().Run();
@@ -21,3 +22,4 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 			services.AddScoped<ScopeService>();
 			services.AddSingleton<SingletonService>();
 		});
+```
